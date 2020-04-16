@@ -8,7 +8,7 @@
 
       <div class="form-group">
         <label for="age">Age</label>
-        <input type="text" class="form-control" id="age" required v-model="customer.age" name="age">
+        <input type="number" class="form-control" id="age" required v-model="customer.age" name="age">
       </div>
 
       <button v-on:click="saveCustomer" class="btn btn-success">Submit</button>

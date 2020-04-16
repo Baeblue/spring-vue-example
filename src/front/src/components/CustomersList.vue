@@ -13,7 +13,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-6">  <!-- 여기 역할이 뭘까 -->
+    <div class="col-md-6">
       <router-view @refreshData="refreshList"></router-view>
     </div>
   </div>
@@ -23,7 +23,7 @@
 import http from "../http-common";
 
 export default {
-  name: "customers-list", <!-- router.js에서는 name: "customers"인데 상관없나.-->
+  name: "customers-list", // router.js에서는 name: "customers"인데 상관없나.
   data() {
       return {
         customers: []   // <li v-for="(customer, index) in customers" :key="index">에서!!

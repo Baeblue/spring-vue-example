@@ -54,7 +54,7 @@ export default {
     },
     deleteCustomer() {
       http
-        .delete("'/customer/" + this.customer.id)
+        .delete("/customer/" + this.customer.id)
         .then(response => {
           console.log(response.data);
           this.$emit("refreshData");
