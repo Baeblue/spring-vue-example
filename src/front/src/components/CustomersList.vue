@@ -23,15 +23,15 @@
 import http from "../http-common";
 
 export default {
-  name: "customers-list", // router.js에서는 name: "customers"인데 상관없나.
+  name: "customers-list",
   data() {
       return {
-        customers: []   // <li v-for="(customer, index) in customers" :key="index">에서!!
+        customers: []
       };
   },
   methods: {
-    /* eslint-disable no-console */  // 이게 뭐지..
-    retrieveCustomers() {    // 고객 검색..? 조회?
+    /* eslint-disable no-console */
+    retrieveCustomers() {
       http
         .get("/customers")
         .then(response => {

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:4200")
-@RestController    // return data
+@RestController     // return data
 @RequestMapping("/api")
 public class CustomerController {
 
@@ -29,7 +29,7 @@ public class CustomerController {
         return customers;
     }
 
-    @PostMapping("/customer")   // create
+    @PostMapping("/customer")
     public Customer postCustomer(@RequestBody Customer customer) {
         Customer _customer = repository.save(new Customer(customer.getName(), customer.getAge()));
         return _customer;

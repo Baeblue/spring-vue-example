@@ -20,8 +20,7 @@ export default new Router({
           path: "/customer/:id",
           name: "customer-details",
           component: Customer,
-          // props를 사용하면 url에 대한 의존성이 제거.
-          props: true  // boolean 모드_props를 true로 설정하면 route.params가 컴포넌트 props로 설정된다.
+          props: true
         }
       ]
     },
